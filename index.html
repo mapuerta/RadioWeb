@@ -1,0 +1,445 @@
+<HTML lang="es">
+<HEAD>
+<TITLE>Radio 91.5 FM</TITLE>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" charset="UTF-8">
+<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery-3.2.0.min.js"></script>
+<script>
+
+
+$().ready(function(){
+    var hidatags;
+    var beforeinfo;
+    var beforeinfomusic = false;
+    hidatags = function( tagid )
+    {
+       
+       $(tagid).hide();
+    }
+
+    var divTags = document.getElementsByTagName('div');
+    for(var i=0;i<divTags.length;i++){
+        if(divTags[i].id.includes('Info') | divTags[i].id.includes('Cont_')){
+            hidatags(divTags[i]);}
+    }
+     if(beforeinfomusic == false){
+         $("#InfoRock").show();
+         beforeinfomusic = "#InfoRock";
+         }
+     $("#Menurock").click(function(event){
+             $(beforeinfomusic).hide();
+            $("#InfoRock").show();
+             beforeinfomusic = "#InfoRock";
+        });            
+     $("#Menumetal").click(function(event){
+            $(beforeinfomusic).hide();
+            $("#InfoMetal").show();
+            beforeinfomusic = "#InfoMetal";
+            
+        });            
+     $("#Menualt").click(function(event){
+            $(beforeinfomusic).hide();
+            $("#InfoAlt").show();
+            beforeinfomusic = "#InfoAlt";
+            
+        });            
+     $("#Menupop").click(function(event){
+            $(beforeinfomusic).hide();
+            $("#InfoPop").show();
+            beforeinfomusic = "#InfoPop";
+            
+        });            
+     $("#Menuqsomos").click(function(event){
+            $(beforeinfo).hide();
+            $("#Cont_qsomos").show();
+            beforeinfo = "#Cont_qsomos";
+        });            
+     $("#MenuPrograma").click(function(event){
+            $(beforeinfo).hide();
+            $("#Cont_programacion").show();
+            beforeinfo = "#Cont_programacion";
+            
+        });            
+     $("#MenuMusica").click(function(event){
+            $(beforeinfo).hide();
+            $("#Cont_musica").show();
+            beforeinfo = "#Cont_musica";
+            
+        });            
+     $("#MenuVideos").click(function(event){
+            $(beforeinfo).hide();
+            $("#Cont_videos").show();
+            beforeinfo = "#Cont_videos";
+            
+        });            
+     $("#MenuConcurso").click(function(event){
+            $(beforeinfo).hide();
+            $("#Cont_concurso").show();
+            beforeinfo = "#Cont_concurso";
+            
+        });            
+     $("#MenuContacto").click(function(event){
+            $(beforeinfo).hide();
+            $("#Cont_contact").show();
+            beforeinfo = "#Cont_contact";
+        });  
+     $("#MenuTsemana").click(function(event){
+            $(beforeinfo).hide();
+            $("#Cont_top").show();
+            beforeinfo = "#Cont_top";
+        });          
+});
+function playlist(cancion) {
+        var audio = document.getElementById("replay")
+        audio.src = cancion;
+        audio.play();
+    }
+</script>
+</HEAD>
+<BODY style="background-color: grey;">
+<header>
+	<div class="wrapper">
+		<div class="logo"><img src="img/radio.png" width="200"/>
+        <h1 style="font-family:Serif;"><i>Radio 91.5</i></h1>
+        </div>
+		<nav>
+			<a class="active" id="Menuqsomos" href="#">Quienes Somos</a>
+			<a id="MenuPrograma">Programacion</a>
+			<a id="MenuMusica" href="#">Música</a>
+		    <a id="MenuTsemana" href="#">Top de la Semana</a>
+			<a id="MenuVideos" href="#">Vídeos</a>
+			<a id="MenuConcurso" href="#">Concursos</a>
+			<a id="MenuContacto" href="#">Contáctanos</a>
+		</nav>
+	</div>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    label {
+      color: black;
+    }
+    div h3 {
+      color: black;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+  <hr>
+<div id="Cont_programacion" class="container-fluid text-center text-primary">    
+  <div class="row content">
+    <div class="col-sm-2">
+      <p><a href="#"></a></p>
+      <p><a href="#"></a></p>
+      <p><a href="#"></a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Mañanas al Maximo</h1>
+      <p>Programa recreativo dirigido al publico general donde lo
+           mantendremos informados de los deportes, entrenamientos, salud
+           y tips de belleza para empezar tu dia con energia y vitalidad.</p>
+      <hr>
+      <h3>LUNES - VIERNES 7:00am-12:00m</h3>
+      <br/>
+    </div>
+        <div class="col-sm-8">
+        <ul>
+            <p><img src="img/lorenzo.png" width="150" height="150"></p>  
+            <li>Lorenzo Mendoza</li>
+        </ul>
+        </div>
+          <div class="col-sm-4">
+            <p>Director tecnico</p>
+        </div>  
+        <div class="col-sm-8">
+        <ul>
+            <p><img src="img/sascha.jpg" width="150" height="150"></p>  
+            <li>Sascha Fitness</li>
+        </ul>
+        </div> 
+        <div class="col-sm-4">
+            <p>Locutora</p>
+        </div> 
+        <div class="col-sm-8">
+        <ul>
+            <p><img src="img/chavez.png" width="150" height="150"></p>  
+            <li>Hugo Chavez</li>
+        </ul>
+        </div> 
+        <div class="col-sm-4">
+            <p>Sindicalista</p>
+        </div> 
+  </div>
+</div>
+
+<div id="Cont_musica" class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Musica</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a id="Menurock" href="#section1">Rock</a></li>
+        <li><a id="Menumetal" href="#section2">Metal</a></li>
+        <li><a id="Menualt" href="#section3">Alternativo</a></li>
+        <li><a id="Menupop" href="#section3">Pop</a></li>
+      </ul><br>
+      <div class="input-group">
+      </div>
+    </div>
+
+    <div id="InfoRock" class="col-sm-9">
+      <hr>
+      <h2 style="color:black;">Slipknot</h2>
+      <img src="img/slipknot.jpg" width="150" height="150"/>
+      <div>
+      <audio src="music/Override.mp3" controls>
+        <p>Tu navegador no implementa el elemento audio</p>
+      </audio>
+      </div>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
+      <h5><span class="label label-danger">Metal</span> <span class="label label-primary">New metal</span></h5><br>
+      <p style="color:black;">Slipknot es una banda estadounidense de nu metal formada en 1995 en Des Moines, Iowa, Estados Unidos. Desde el año 1999 hasta 2010
+         mantuvo su formación más exitosa después de diversos cambios en la misma. Sus integrantes en la actualidad son Chris Fehn, Corey Taylor, 
+         Craig Jones, James Root, Mick Thomson, Shawn Crahan y Sid Wilson. Slipknot es conocida por las máscaras características de cada uno de sus
+         miembros que han cambiado conforme han sacado más discografía.
+         Sus miembros utilizan dos tipos de guitarra(principal y rítmica), un bajo, dos instrumentos de percusión personalizados,
+         una batería e instrumentos electrónicos como sampler o mesas de mezclas. El sonido de la banda ha sido descrito como "una máquina trilladora devorando un grupo de tambores militares".2 El vocalista Corey Taylor también incorpora diversos estilos vocales, como por ejemplo la voz gutural, el canto melódico y el rapeo, mientras que las letras en general tienen un tono agresivo. Las influencias de la banda incluyen, entre otros géneros, el death metal, el thrash metal y el heavy metal, aunque suelen ser incluidos con asiduidad dentro del metal alternativo y el nu metal.3 4 3 5 1 También fueron incluidos en el movimiento NWOAHM.6</p>
+      <br><br>
+      </div>
+       <div id="InfoMetal" class="col-sm-9">
+      <hr>
+      <h2 style="color:black;">Rammstein</h2>
+      <img src="img/rammstein.jpg" width="150" height="150">
+      <div>
+      <audio src="music/Pussy.mp3" controls>
+        <p>Tu navegador no implementa el elemento audio</p>
+      </audio>
+      </div>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+      <h5><span class="label label-success">Metal industrial</span></h5><br>
+      <p style="color:black;">Rammstein (pronunciado como ['ʁamʃta͡ɪn]) es una banda alemana de metal industrial formada en 1994 por los músicos Till Lindemann, 
+         Richard Z. Kruspe, Oliver Riedel, Paul Landers, Christian Lorenz y Christoph Schneider.2 Su música se basa en una corriente surgida en 
+        su país en los años 1990 llamada Neue Deutsche Härte del que son su exponente más popular y al que también pertenecen, entre otros, Oomph! y Die Krupps. Ellos mismos han denominado en alguna ocasión esta mezcla con el apelativo de Tanzmetall («metal de baile»).3 4
+        Sus canciones están escritas casi exclusivamente en alemán y han vendido más de 35 millones de copias en todo el mundo.2 Entre otros reconocimientos, han sido nominados en dos ediciones de los premios Grammy en la categoría de mejor interpretación de metal: en 1999 con el tema «Du hast» (del álbum Sehnsucht) y en 2006 con «Mein Teil» (del álbum Reise, Reise).2 Han lanzado al mercado un total de seis álbumes de estudio y tres en directo, así como cinco DVD; toda su discografía se encuentra disponible en el catálogo de la multinacional discográfica Universal Music.</p>
+        </div>
+       <div id="InfoAlt" class="col-sm-9">
+      <hr>
+      <h2 style="color:black;">Linkin Park</h2>
+      <img src="img/linkin.jpg" width="150" height="150">
+      <div>
+      <audio src="music/Numb.mp3" controls>
+        <p>Tu navegador no implementa el elemento audio</p>
+      </audio>
+      </div>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+      <h5><span class="label label-success">New Rock</span></h5><br>
+      <p style="color:black;">Linkin Park es una banda estadounidense de rock alternativo procedente de Agoura Hills, 
+         California. Formada en 1996, el grupo estuvo inicialmente integrado por Mike Shinoda, Dave Farrell, Joe Hahn, Brad Delson, 
+         Rob Bourdon y Mark Wakefield, este último como voz principal. La banda inició en ese mismo año sus primeros trabajos musicales de 
+         manera independiente y posterior a esto grabaron su primer material llamado Xero; sin embargo no tuvieron gran éxito en la búsqueda de 
+         un sello discográfico ya que nadie mostró interés por su trabajo, lo que ocasionó la renuncia de Mark Wakefield.2 Poco después, 
+         Chester Bennington se incorporó a la banda como vocalista; el grupo realizó su primera presentación en un club de Los Ángeles y siendo 
+         respaldados por Jeff Blue, en aquel entonces vicepresidente de Warner Bros. Records, lograron firmar con el sello en 1999. El nombre del 
+         grupo es un juego de palabras que hace referencia al Lincoln Park en Santa Mónica.2 5</p>
+        </div>
+       <div id="InfoPop" class="col-sm-9">
+      <hr>
+      <h2 style="color:black;">Shakira</h2>
+      <img src="img/shakira.png" width="150" height="150">
+      <div>
+      <audio src="music/Anuncio.mp3" controls>
+        <p>Tu navegador no implementa el elemento audio</p>
+      </audio>
+      </div>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+      <h5><span class="label label-success">New Rock</span></h5><br>
+      <p style="color:black;">Shakira Isabel Mebarak Ripoll1 2 (Barranquilla, 2 de febrero de 1977) es una cantautora, productora discográfica, bailarina, modelo, empresaria, actriz, embajadora de buena voluntad de la UNICEF y filántropa colombiana.
+        Debutó en el mercado discográfico hispanoamericano en 1995 con el álbum Pies descalzos colaborando con Luis Fernando Ochoa en la composición y producción de los once temas incluidos, en los que se destacan «Estoy aquí», «¿Dónde estás corazón?» y «Antología».
+        Años después, continuó trabajando con Luis Fernando Ochoa y lanzó ¿Dónde están los ladrones?. El éxito internacional le llegó en el 2001 con Laundry Service. Cuatro años más tarde, Shakira lanzó su sexto álbum de estudio titulado Fijación oral vol. 1 y volvió a colaborar con Luis Fernando Ochoa, Lester Méndez, y Gustavo Cerati en la producción de distintas canciones, entre las que destacan «En tus pupilas», «La tortura» con Alejandro Sanz, «La pared» y «No». Sin embargo, Shakira se convirtió en una de las artistas más aclamadas internacionalmente al iniciar la promoción de su quinto álbum de estudio, Oral Fixation vol. 2, cuyo relanzamiento a inicios de 2006 involucró el lanzamiento de «Hips Don't Lie» ("Las caderas no mienten" en español), el que fue el sencillo más exitoso del año a nivel mundial, siendo incluido en la banda sonora de la Copa Mundial de Fútbol 2006.
+        Shakira es la artista femenina internacional con mayor número de ventas en la década del 2000 y la única que tuvo cinco sencillos («Hips Don't Lie», «Loca», «Whenever, Wherever», «Underneath Your Clothes» y «La tortura», en las posiciones #1, #16, #17, #18, y #19, respectivamente) en la lista de los veinte más vendidos en la pasada década (2000-2010), siendo «Hips Don't Lie» el sencillo más vendido de la década, colocándose entre los primeros cuarenta en la historia de la música.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="Cont_videos" class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="col-sm-3">
+      <h3>Slipknot</h3>
+      <video width="320" height="240" controls>
+          <source src="videos/Override.mp4" type="video/mp4">
+          Tu navegador no implementa el elemento <code>video</code>.
+     </video>
+    </div>
+    </div>
+    <div class="col-sm-4">
+      <h3>Rammstein</h3>
+      <video width="320" height="240" controls>
+          <source width="150" height="150" src="videos/Rammstein.mp4" type="video/mp4">
+          Tu navegador no implementa el elemento <code>video</code>.
+     </video>
+    </div>
+    <div class="col-sm-4">
+     <h3>Metallica</h3>
+      <video width="320" height="240" controls>
+          <source src="videos/Metallica.mp4" type="video/mp4">
+          Tu navegador no implementa el elemento <code>video</code>.
+     </video>
+    </div>
+    <div class="col-sm-4">
+     <h3>Juanes</h3>
+      <video width="320" height="240" controls>
+          <source src="videos/Juanes.mp4" type="video/mp4">
+          Tu navegador no implementa el elemento <code>video</code>.
+     </video>
+    </div>
+    <div class="col-sm-4">
+     <h3>Disturbed</h3>
+      <video width="320" height="240" controls>
+          <source src="videos/Disturbed.mp4" type="video/mp4">
+          Tu navegador no implementa el elemento <code>video</code>.
+     </video>
+    </div>
+    <div class="col-sm-4">
+     <h3>Pain</h3>
+      <video width="320" height="240" controls>
+          <source src="videos/Pain.mp4" type="video/mp4">
+          Tu navegador no implementa el elemento <code>video</code>.
+     </video>
+    </div>
+  </div>
+  </div>
+
+  <div id="Cont_contact" class="container">
+  <h3>Contactanos</h3>
+  <form id="Cont_contact">
+    <div class="form-group">
+      <label for="email">Correo:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Mensaje:</label>
+       <textarea class="form-control" rows="3" required></textarea>
+    <div class="checkbox">
+      <label><input type="checkbox">Recordarme</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+</div>
+
+<div id="Cont_concurso" class="container">
+
+  <form >
+    <div class="form-group">
+      <h2><label for="email">Bienvenido al concurso de la semana</label></h2>
+      <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+    </div>
+    <div class="form-group">
+       <hr>
+      <label for="pwd">¿Quien gano la copa america el año 2008?</label>
+       <input type="text" class="form-control" id="email">
+    <div class="checkbox">
+       <hr>
+      <label for="pwd">¿Cuantos ojos tiene una araña?</label><br>
+      <label><input name="ojos" type="checkbox">1</label><br>
+      <label><input name="ojos" type="checkbox">20</label><br>
+      <label><input name="ojos" type="checkbox">350</label><br>
+    </div>
+    <div class="checkbox">
+      <hr>
+      <label for="pwd">¿Quien fue Hercules?</label><br>
+      <label><input name="ojos" type="checkbox">Un peluquero</label><br>
+      <label><input name="ojos" type="checkbox">Un dios griego</label><br>
+      <label><input name="ojos" type="checkbox">Un se mi dios</label><br>
+      <label><input name="ojos" type="checkbox">La mama de tu hermana</label><br>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+</div>
+
+<div id="Cont_qsomos" class="container">
+<center>
+<p><h3>Somos una emisora de radio muy cool y queremos hacerte la vida mas divertida con
+nuestra musica y programacion. Tu radio favorita es 91.5 FM</h3></p>
+<img src="img/emisorasrd.jpg">
+</center>
+</div>
+
+<div id="Cont_top" class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 watch-card">
+            <div class="artist-title col-md-12">
+                <span>Musica</span>
+            </div>
+            <div class="artist-collage col-md-12">
+                <span class="play-mix"><span class="btn btn-info play-mix-btn"> <span>►</span>Top de la semana</span></span>
+                <div class="col-md-6"><img src="img/mq1.jpg" alt="artist-image" width="150" height="150"></div>
+                <div class="col-md-6 collage-rhs">
+                    <div class="col-md-12"><img src="img/koto.jpg" alt="artist-image" width="150" height="84"></div>
+                    <div class="col-md-12"><img src="img/epica.jpg" alt="artist-image" width="150" height="84"></div>        
+                </div>
+            </div>
+            <div class="listing-tab col-md-12">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#track" aria-controls="track" role="tab" data-toggle="tab">Top tracks</a></li>
+                  </ul>
+                
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="track">
+                        <ul>
+                            <li><a id="py1" href="#" onclick="playlist('music/Anuncio.mp3')">(Shakira) Te anuncio</a><span>4:31</span></li>
+                            <li><a id="py2" href="#" onclick="playlist('music/EPICA.mp3')">(EPICA) Universal Death Squad</a> <span>6:01</span></li>
+                            <li><a id="py3" href="#" onclick="playlist('music/Numb.mp3')">(Linkin Park) Numb</a><span>4:09</span></li>
+                            <li><a id="py4" href="#" onclick="playlist('music/Override.mp3')">(Slipknot) Override</a>  <span>3:51</span></li>
+                            <li><a id="py5" href="#" onclick="playlist('music/Pussy.mp3')">(Rammstein) Pussy</a><span>4:15</span></li>
+                            <li><a id="py6" href="#" onclick="playlist('music/Mouth.mp3')">(Pain) Shut Your Mouth</a> <span>4:17</span></li>
+                            <li><a id="py7" href="#" onclick="playlist('music/No Desesperes.mp3')">(Gondwana) No Desesperes</a>  <span>4:52</span></li>
+                            <li><a id="py8" href="#" onclick="playlist('music/Vengeful.mp3')">(Disturbed) The Vengeful One</a>   <span>4:18</span></li>
+                            <li><a id="py9" href="#" onclick="playlist('music/Way Down.mp3')">(Kaleo) Way Down We Go</a>  <span>4:16</span></li>
+                            <li><a id="py10" href="#" onclick="playlist('music/koto.mp3')"> (CloZee) Koto</a> <span>6:04</span></li>
+                        </ul>
+                    <audio id="replay" src="" controls>
+                    <p>Tu navegador no implementa el elemento audio</p>
+                  </audio>
+                    </div>
+                    
+                    
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
